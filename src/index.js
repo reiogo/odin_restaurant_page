@@ -1,10 +1,39 @@
-import Imagon from './flowers.jpg';
+import initPage from './page-load';
+import Menu from './menu';
+import Contact from './contact';
 
-console.log('hello');
+initPage();
 
-const element = document.createElement('div')
+const switchTab = (event) => {
 
-const myImage = new Image();
-myImage.src = Imagon
+  const contentDiv = document.querySelector("div#content");
 
-  element.appendChild(myImage);
+  while (contentDiv.hasChildNodes()) {
+
+    contentDiv.removeChild(contentDiv.firstChild);
+
+  }
+  
+  if (event.target.id == 'home') {
+    console.log ('hellllo');
+    initPage();
+
+  } else if (event.target.id == 'menu') {
+
+    Menu();
+
+  } else if (event.target.id == 'contact') {
+
+    Contact();
+
+  }
+}
+
+const homeTab = document.querySelector('#home');
+const menuTab = document.querySelector('#menu');
+const contactTab = document.querySelector('#contact');
+
+
+homeTab.addEventListener("click", switchTab);
+menuTab.addEventListener("click", switchTab);
+contactTab.addEventListener("click", switchTab);
