@@ -2,7 +2,7 @@
 
 Live demo:
 
-Tech Stack:
+###Tech Stack:
  - HTML
  - CSS
  - Javascript(Vanilla)
