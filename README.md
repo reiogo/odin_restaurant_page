@@ -1,11 +1,11 @@
-# odin_restaurant_page
+# Simple Webite
+Bare bones implementation of a website to learn basics.
 
-Live demo:
-resources used: https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page
+Live demo: https://reiogo.github.io/odin_restaurant_page/
 
 ### Tech Stack:
  - HTML
  - CSS
- - Javascript(Vanilla)
+ - Javascript
  - npm
  - webpack
